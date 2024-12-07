@@ -1,15 +1,21 @@
-# Indian General Election 2024 SQL Project
+# Indian General Election 2024 - SQL + Python Project
 
 ## Introduction
-SQL (Structured Query Language) has been a cornerstone for managing and querying relational databases, especially when dealing with large datasets. In this project, SQL is used to explore insights from the Indian General Election 2024. The project highlights how SQL can effectively solve various business problems by querying election results using simple yet powerful functions.
+This project expands beyond SQL queries into Python-based data analysis and visualization to provide deeper insights into the Indian General Election 2024. By leveraging Python libraries such as Pandas, Matplotlib, and Plotly, we analyze closely contested seats, voting trends, and party performances across states. The integration of SQL and Python offers a comprehensive approach to solving real-world election-related business problems.
 
 ## Table of Contents
-1. [Overview](#1-overview)
-2. [Business Problems Solved](#2-business-problems-solved)
-3. [Project Structure](#3-project-structure)
-4. [Key SQL Queries](#4-key-sql-queries)
-5. [Appendix](#5-appendix-sql-table-structure)
-6. [Conclusion](#6-conclusion)
+1. [Overview](#overview)
+2. [Business Problems Solved with SQL](#business-problems-solved-with-sql)
+3. [Business Problems Solved with Python](#business-problems-solved-with-python)
+4. [Project Structure](#project-structure)
+5. [Database Schema](#database-schema)
+6. [Key Python Analyses](#key-python-analyses)
+7. [Appendix](#appendix)
+8. [Conclusion](#conclusion)
+9. [Challenges and Limitations](#challenges-and-limitations)
+10. [License](#license)
+11. [Disclaimer](#disclaimer)
+
 
 ---
 
@@ -93,7 +99,7 @@ SELECT COUNT (DISTINCT Constituency_ID) AS 'India Parliament Constituency Seats'
 ```
 Data preview:
 
-![Total Seats in Indian Parliament](snaps/total_seats_in_indian_parliament.png)
+![Total Seats in Indian Parliament](SQL/outputs/total_seats_in_indian_parliament.png)
 
 <sup/>[↑ Back to Top](#table-of-contents)
 
@@ -106,7 +112,7 @@ GROUP BY State_Name;
 ```
 Data preview:
 
-![Total Seats by State](snaps/total_seats_by_state.png)
+![Total Seats by State](SQL/outputs/total_seats_by_state.png)
 
 <sup/>[↑ Back to Top](#table-of-contents)
 
@@ -144,7 +150,7 @@ JOIN Constituency_agg CA ON NP.Party_ID = CA.Party_ID;
 ```
 Data preview:
 
-![Total Seats Won by NDA](snaps/total_seats_won_by_nda.png)
+![Total Seats Won by NDA](SQL/outputs/total_seats_won_by_nda.png)
 
 <sup/>[↑ Back to Top](#table-of-contents)
 
@@ -173,7 +179,7 @@ ORDER BY 2 DESC;
 ```
 Data preview:
 
-![NDA Seats by Party](snaps/nda_seats_by_party.png)
+![NDA Seats by Party](SQL/outputs/nda_seats_by_party.png)
 
  <sup/>[↑ Back to Top](#table-of-contents)
 
@@ -218,7 +224,7 @@ JOIN Constituency_agg CA ON IP.Party_ID = CA.Party_ID;
 ```
 Data preview:
 
-![Total Seats Won by INDIA Alliance](snaps/total_seats_won_by_india_alliance.png)
+![Total Seats Won by INDIA Alliance](SQL/outputs/total_seats_won_by_india_alliance.png)
 
 <sup/>[↑ Back to Top](#table-of-contents)
 
@@ -255,7 +261,7 @@ ORDER BY 2 DESC;
 ```
 Data preview:
 
-![INDIA Seats by Party](snaps/india_seats_by_party.png)
+![INDIA Seats by Party](SQL/outputs/india_seats_by_party.png)
 
 <sup/>[↑ Back to Top](#table-of-contents)
 
@@ -309,7 +315,7 @@ SET party_alliance =
 ```
 Data preview:
 
-![Add Party Alliance Column](snaps/add_party_alliance_column.png)
+![Add Party Alliance Column](SQL/outputs/add_party_alliance_column.png)
 
 <sup/>[↑ Back to Top](#table-of-contents)
 
@@ -326,7 +332,7 @@ ORDER BY 2 DESC;
 ```
 Data preview:
 
-![Alliance with Most Seats](snaps/alliance_with_most_seats.png)
+![Alliance with Most Seats](SQL/outputs/alliance_with_most_seats.png)
 
 <sup/>[↑ Back to Top](#table-of-contents)
 
@@ -353,7 +359,7 @@ WHERE s.State = 'Uttar Pradesh' AND cr.Constituency_Name = 'ETAH';
 ```
 Data preview:
 
-![Winning Details for a Specific Constituency](snaps/winning_details_for_a_specific_constituency.png)
+![Winning Details for a Specific Constituency](SQL/outputs/winning_details_for_a_specific_constituency.png)
 
 <sup/>[↑ Back to Top](#table-of-contents)
 
@@ -378,7 +384,7 @@ ORDER BY 5 DESC;
 ```
 Data preview:
 
-![EVM vs Postal Vote Distribution](snaps/evm_vs_postal_vote_distribution.png)
+![EVM vs Postal Vote Distribution](SQL/outputs/evm_vs_postal_vote_distribution.png)
 
 <sup/>[↑ Back to Top](#table-of-contents)
 
@@ -397,7 +403,7 @@ ORDER BY 2 DESC;
 ```
 Data preview:
 
-![Most Seats Won in a State](snaps/most_seats_won_in_a_state.png)
+![Most Seats Won in a State](SQL/outputs/most_seats_won_in_a_state.png)
 
 <sup/>[↑ Back to Top](#table-of-contents)
 
@@ -442,7 +448,7 @@ FROM Party_Alliance_Winnings PAW;
 ```
 Data preview:
 
-![Alliance-wise Wins by State](snaps/alliance-wise_wins_by_state.png)
+![Alliance-wise Wins by State](SQL/outputs/alliance-wise_wins_by_state.png)
 
 <sup/>[↑ Back to Top](#table-of-contents)
 
@@ -462,7 +468,7 @@ ORDER BY 4 DESC;
 ```
 Data preview:
 
-![Top EVM Votes by Constituency](snaps/top_evm_votes_by_constituency.png)
+![Top EVM Votes by Constituency](SQL/outputs/top_evm_votes_by_constituency.png)
 
 <sup/>[↑ Back to Top](#table-of-contents)
 
@@ -518,7 +524,7 @@ ORDER BY 1, 2;
 ```
 Data preview:
 
-![Winner and Runner-up by Constituency](snaps/winner_and_runner-up_by_constituency.png)
+![Winner and Runner-up by Constituency](SQL/outputs/winner_and_runner-up_by_constituency.png)
 
 <sup/>[↑ Back to Top](#table-of-contents)
 
@@ -541,7 +547,7 @@ WHERE s.State = 'Maharashtra';
 ```
 Data preview:
 
-![State-Wise Election Summary](snaps/state-wise_election_summary.png)
+![State-Wise Election Summary](SQL/outputs/state-wise_election_summary.png)
 
 <sup/>[↑ Back to Top](#table-of-contents)
 
@@ -569,6 +575,49 @@ SELECT * FROM states;
 ```
 
 ---
+
+
+
+### Directory Structure:
+
+```bash
+Indian-General-Election-2024/
+¦
++-- SQL/
+¦   +-- database_creation.sql       		# SQL script for database setup
+¦   +-- queries.sql                 		# SQL queries for solving business problems
+¦   +-- outputs/                    		# Output data and figures from SQL analysis
+¦   +-- README.md                   		# Documentation for SQL section
+¦
++-- Python/
+¦   +-- Indian_General_Election_2024.ipynb	# Jupyter notebook for Python analysis
+¦   +-- plots/                       		# Visual outputs from Python analysis
+¦   +-- requirements.txt              		# Lists the necessary Python packages for running the Notebook
+¦   +-- README.md                    		# Documentation for Python section
+¦
++-- PDF/                             
+¦   +-- IGE_2024_Jupyter_Notebook_6.pdf    # A PDF version of the analysis Notebook for easy viewing
+¦
++-- data/                            		# Datasets used in the analysis
++-- README.md                        		# Main README for the project
+
+```
+
+
+<a name="6-key-python-analyses"></a>
+## 6. Key Python &#128013; Analyses
+6. [Key Python Analyses](#6-key-python-analyses)
+
+
+
+
+
+
+
+
+
+
+
 
 ## 6. Conclusion
 
