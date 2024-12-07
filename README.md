@@ -7,21 +7,23 @@ This project expands beyond SQL queries into Python-based data analysis and visu
 <a name="TOC"></a>
 ## &#128218; Table of Contents
 1. [Overview](#overview)
-2. [Business Problems Solved with SQL](#business-problems-solved-with-sql)
-3. [Business Problems Solved with Python](#business-problems-solved-with-python)
+2. [Business Problems Solved with SQL](#business-sql)
+3. [Business Problems Solved with Python](#business-python)
 4. [Project Structure](#project-structure)
 5. [Database Schema](#database-schema)
-6. [Key Python Analyses](#key-python-analyses)
+6. [Key Python Analyses](#key-python)
 7. [Appendix](#appendix)
 8. [Conclusion](#conclusion)
-9. [Challenges and Limitations](#challenges-and-limitations)
+9. [Challenges and Limitations](#challenges)
 10. [License](#license)
 11. [Disclaimer](#disclaimer)
 
+
 ---
 
-<a name="1-overview"></a>
+<a name="overview"></a>
 ## &#127987; 1. Overview
+
 This project aims to showcase the power of SQL by solving real-world business problems using the results of the Indian General Election 2024 dataset. The insights are derived from the election data, showing seat distribution across states, party alliances, and the results of various parties.
 
 The data is stored in multiple tables, and the solution uses SQL queries to perform operations like aggregations, joins, and case-based updates to explore the election results.
@@ -30,7 +32,7 @@ The data is stored in multiple tables, and the solution uses SQL queries to perf
 
 ---
 
-<a name="2-business-problems-solved-with-sql"></a>
+<a name="business-sql"></a>
 ## &#128166; 2. Business Problems Solved with SQL
 
 	- Total Seats in Indian Parliament
@@ -495,7 +497,7 @@ Data preview:
 
 ---
 
-<a name="3-business-problems-solved-with-python"></a>
+<a name="business-python"></a>
 ## 3. Business Problems Solved with Python &#128013;
 
 	Query 1. Comparing Results Over Multiple Constituencies
@@ -871,7 +873,7 @@ Data preview:
 
 ---
 
-<a name="4-project-structure"></a>
+<a name="project-structure"></a>
 ## &#128223; 4. Project Structure
 
 This project is structured around two key components:
@@ -907,7 +909,7 @@ Indian-General-Election-2024/
 
 ---
 
-<a name="5-database-schema"></a>
+<a name="database-schema"></a>
 ## &#128204; 5. Database Schema
 
 The ERD:
@@ -917,7 +919,7 @@ The ERD:
 
 ---
 
-<a name="6-key-python-analyses"></a>
+<a name="key-python"></a>
 ## 6. Key Python &#128013; Analyses
 
 The following are the key Python analyses performed to explore election data beyond SQL queries:
@@ -935,7 +937,7 @@ The following are the key Python analyses performed to explore election data bey
 
 ---
 
-<a name="7-appendix"></a>
+<a name="appendix"></a>
 ## &#127997; 7. Appendix: SQL Table Structure
 
 To preview the structure of the dataset used in this project, the following SQL queries can be executed to explore the columns and data in each table.
@@ -961,7 +963,7 @@ SELECT * FROM states;
 
 ---
 
-<a name="8-conclusion"></a>
+<a name="conclusion"></a>
 ## &#9193; 8. Conclusion &#9194;
 
 	This project successfully identified key insights into closely contested seats in the Indian General Election, with a special focus on Punjab. By analyzing the margin of victory and the performance of major political parties, we have gained a clearer picture of the battleground constituencies. SQL's flexibility in data handling and querying is shown through the insights derived from the Indian General Election 2024. Whether dealing with seat counts, alliances, or overall election results, SQL provides a straightforward yet powerful tool for uncovering key election insights.These findings could be valuable for future election strategies and campaign planning.
@@ -972,7 +974,7 @@ SELECT * FROM states;
 
 ---
 
-<a name="9-challenges-and-limitations"></a>
+<a name="challenges"></a>
 ## &#9940; 9. Challenges and Limitations &#9940;
 
 	Technical Constraints: Due to limited system resources and technical difficulties in setting up Geopandas, the geospatial mapping for visualizing constituency data was not completed. Future updates to the project will focus on resolving these issues and providing more in-depth geographical analyses.
@@ -982,7 +984,7 @@ SELECT * FROM states;
 
 ---
 
-<a name="10-license"></a>
+<a name="license"></a>
 ## &#129516; 10. License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
@@ -992,7 +994,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-<a name="11-disclaimer"></a>
+<a name="disclaimer"></a>
 ## &#128268; 11. Disclaimer
 
 #### Disclaimer
