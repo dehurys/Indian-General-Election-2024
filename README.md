@@ -532,7 +532,7 @@ Data preview:
 
 ![Total Seats Won by NDA](Python/plots/query_largest_margin_winning.png)
 
-- &#128278; Summary of Query Result:
+- &#128278; Summary of Query_1 Result:
 
 ```The SQL query highlights constituencies where the winning margin was significant. These constituencies represent strongholds for political parties and may be key to future electoral strategies.```
 
@@ -616,9 +616,9 @@ Data preview:
 
 ![Total Seats Won by NDA](Python/plots/query_closely_contested_seats.png)
 
-- &#128278; Summary of Query Result:
+- &#128278; Summary of Query_2 Result:
 
-```The top 10 closely contested constituencies show that regions in states like Maharashtra and Gujarat are crucial battlegrounds with narrow victory margins. Bharatiya Janata Party (BJP) had strong showings in these areas, indicating the need for intensified campaigning from opposition parties.```
+```The SQL query identifies constituencies with the closest electoral races by analyzing the smallest margins of victory, for a state IN "Punjab". These results reveal where political campaigns were most competitive and provide insights into potential swing constituencies in future elections.```
 
 <sup/>[↑ Back to Top](#TOC)
 
@@ -666,7 +666,9 @@ Data preview:
 
 - &#128304; Revised Summary for the Plot:
 
-```The 2024 Indian General Election revealed several closely contested states, where the margins of victory were narrow. The data shows that the Bharatiya Janata Party (BJP) dominated in regions such as the East Coast and West Coast, indicating divided voter sentiments. For future election campaigns, political parties must focus on these battleground states. Below are the top 10 states with the smallest margins of victory.```
+```The 2024 Indian General Election in Punjab highlighted several constituencies with narrow margins of victory. The closest electoral races occurred in Firozpur, where the Indian National Congress (INC) won with a margin of just 3,242 votes. The presence of multiple constituencies with relatively small margins, such as Anandpur Sahib (10,846 votes) and Patiala (14,831 votes), suggests that Punjab remains a highly competitive state with potential for future swing elections. INC's dominance in most of these constituencies indicates its strong foothold, but the presence of Aam Aadmi Party (AAP) and Shiromani Akali Dal (SAD) shows that voter sentiments are divided, leading to close contests.```
+
+```These results underscore the need for more focused campaign strategies in constituencies with tighter races, where even small shifts in voter preferences could tip the balance in favor of other parties. This analysis provides a roadmap for political parties to target their efforts in key constituencies to potentially swing future elections.```
 
 <sup/>[↑ Back to Top](#TOC)
 
@@ -715,7 +717,7 @@ Data preview:
 
 ![Total Seats Won by NDA](Python/plots/query_party_performance_in_close_contests.png)
 
-- &#128278; Summary of Query Result:
+- &#128278; Summary of Query_3 Result:
 
 ```BJP dominated many of the closely contested constituencies, especially in Gujarat and Rajasthan. INC, while trailing in these regions, still managed to perform well in states like Kerala and Punjab, where the margins were small but significant. This analysis reveals key battlegrounds for both parties.```
 
@@ -798,7 +800,7 @@ Data preview:
 
 ![Total Seats Won by NDA](Python/plots/query_average_margin_of_victory.png)
 
-- &#128278; Summary of Query Result:
+- &#128278; Summary of Query_4 Result:
 
 ```This query analyzes the average margin of victory for each state, providing insights into states with highly competitive elections versus those with large winning margins.```
 
@@ -879,6 +881,7 @@ Data preview:
 This project is structured around two key components:
 
     SQL Queries and Analysis: Initial analysis and insights were derived using SQL to answer election-related business problems.
+    
     Python Analysis and Visualization: More advanced data analysis and visualization were performed using Python to explore trends in voter behavior, closely contested seats, and party performance.
 
 #### &#128194; The Directory Structure:
